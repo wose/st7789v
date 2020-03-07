@@ -1,0 +1,23 @@
+[package]
+name = "st7789v"
+categories = ["ebmedded", "hardware-support", "no-std"]
+version = "0.1.0"
+authors = ["Sebastian Woetzel <wose@zuendmasse.de>"]
+edition = "2018"
+
+description = "A platform agnostic driver to interface with the ST7789V LCD display"
+keywords = ["embedded-hal", "display"]
+repostitory = "https://github.com/wose/st7789v"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+embedded-hal = "0.2.3"
+
+[dependencies.embedded-graphics]
+optional = true
+version = "0.6.0-beta.2"
+
+[features]
+default = ["graphics"]
+graphics = ["embedded-graphics"]
