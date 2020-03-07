@@ -35,7 +35,8 @@ where
     }
 }
 
-impl<SPI, CS, DC, RST, PinError, SpiError> DrawTarget<Rgb565> for ST7789V<SPI, CS, DC, RST, PinError, SpiError>
+impl<SPI, CS, DC, RST, PinError, SpiError> DrawTarget<Rgb565>
+    for ST7789V<SPI, CS, DC, RST, PinError, SpiError>
 where
     SPI: spi::Write<u8, Error = SpiError>,
     CS: OutputPin<Error = PinError>,

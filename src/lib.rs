@@ -322,6 +322,8 @@ where
             .memory_access_control(MemAccCtrlConfig::default())?
             .column_address(0, 240)?
             .row_address(0, 240)?
+            .inversion_on()?
+            .normal_mode()?
             .display_on()?;
 
         Ok(())

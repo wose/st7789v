@@ -2,6 +2,17 @@
 
 > A platform agnostic driver to interface with the ST7789V LCD controller.
 
+- [Datasheet]
+
+[Datasheet]: https://wiki.pine64.org/images/5/54/ST7789V_v1.6.pdf
+
+## Similar/Alternative drivers
+
+This driver is inspired by the [st7735-lcd-rs] and a halfway through discovered
+parallel effort to implement this driver [st7789].
+
+[st7735-lcd-rs]: https://github.com/sajattack/st7735-lcd-rs
+[st7789]: https://github.com/almindor/st7789
 
 ## License
 
